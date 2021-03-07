@@ -2,8 +2,16 @@ html{
     overflow-x: hidden;
 }
 
+html,body{
+    scroll-behavior: smooth;
+}
+
 .navbar {
-    background:transparent;
+    background: #fff !important;
+}
+
+.nav-link{
+    font-size: 1.2rem;
 }
 
 .jumbotron {
@@ -24,12 +32,28 @@ html{
 .display-4{
     font-size: 8rem;
     color: #fff;
+
+    animation-name: moveInRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
 }
 
 .lead{
     font-size: 5rem;
     color: #fff;
+
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
 }
+
+.arrow-animation{
+
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
 
 .container-arrow{
     text-align: center;
@@ -40,6 +64,10 @@ html{
     color: #fff;
     font-size: 5rem;
     cursor: pointer;
+
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .container-about{
@@ -56,6 +84,18 @@ html{
     margin-top: 9rem;
     transform: translateX(-9%);
 }
+
+.text-owner{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.text-owner:hover{
+    text-decoration: none;
+}
+
+/*Skills section*/
+
 
 .container-skills{
     height: 40rem;
@@ -103,7 +143,10 @@ html{
 }
 
 
-/*Location*/
+/*Location section*/
+
+
+
 .container-location{
     height: 60rem;
 }
@@ -133,13 +176,9 @@ html{
     transition: transform 3s;
 }
 
-/* .card-location:hover{
-    background-color: rgb(247, 162, 162);
-    color: #fff;
-    transition: transform 3s;
-} */
-
-
+.card-location:hover{
+    color: rgb(233, 132, 132);
+}
 
 .fa-search-location{
     font-size: 2.5rem;
@@ -158,6 +197,7 @@ html{
 
 
 
+/*Reviews section*/
 
 
 
@@ -253,12 +293,80 @@ html{
     letter-spacing: 3px;
 }
 
-.container-footer{
-    height: 20rem;
-    background-color: rgb(68, 65, 65);
+/*Contact section*/
+
+
+.container-contact{
+    height: 50rem;
+    background-image: linear-gradient(to left bottom,
+    rgba(240, 247, 235, 0.5),
+     rgb(255, 199, 44, 0.5)), 
+     url(../images/headway-5QgIuuBxKwM-unsplash.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   transform:translatez(0) !important;
+-webkit-transform:translatez(0) !important;
+}
+
+.contact-quote{
+text-align: center;
+margin-top: 15rem;
 }
 
 
+.contact-quote h3{
+font-size: 3rem;
+}
+
+.contact-hr{
+border-bottom: 5px solid rgb(250, 1, 1);
+width: 10%;
+margin-left: 11.5rem;
+}
+
+.contact-quote h6{
+font-size: 1.2rem;
+margin-bottom: 3rem;
+}
+
+.contact-quote p{
+margin-bottom: 3rem;
+color: #000;
+font-size: 1.2rem;
+}
+
+.fa-check-square {
+color: rgb(221, 94, 94);
+font-size: 2rem;
+}
+
+form{
+background-color: rgb(255, 255, 255, 0.5);
+padding: 2rem 2rem;
+margin-top: 10rem;
+}
+
+.btn-style{
+padding: 1rem 15rem;
+background-color: rgb(255, 49, 49);
+text-align: center;
+text-decoration: none;
+color: #fff;
+}
+
+.btn-style:hover{
+color: #000;
+background-color: rgb(255, 49, 49) !important;
+text-decoration: none;
+
+}
+
+/*Footer section    */
+
+.container-footer{
+    height: 25rem;
+    background-color: rgb(68, 65, 65);
+}
 
 
 .footer-header{
@@ -269,7 +377,33 @@ html{
 
 .footer-header h3{
     margin-left: 2rem;
+}
 
+.footer-header li{
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.footer-header li:hover{
+    color: rgba(230, 228, 228, 0.795);
+}
+
+.footer-hr-1{
+    border-bottom: 5px solid rgb(250, 1, 1);
+    width: 10%;
+    transform: translateX(-60%);
+}
+
+.footer-hr-2{
+    border-bottom: 5px solid rgb(250, 1, 1);
+    width: 10%;
+    transform: translateX(-50%);
+}
+
+.footer-hr-3{
+    border-bottom: 5px solid rgb(250, 1, 1);
+    width: 10%;
+    transform: translateX(-25%);
 }
 
 .footer-header ul li{
@@ -285,64 +419,123 @@ html{
      url(../images/headway-5QgIuuBxKwM-unsplash.jpg);
 } */
 
-.container-contact{
-        height: 50rem;
-        background-image: linear-gradient(to left bottom,
-        rgba(240, 247, 235, 0.5),
-         rgb(255, 199, 44, 0.5)), 
-         url(../images/headway-5QgIuuBxKwM-unsplash.jpg);
-       background-size: cover;
-       background-attachment: fixed;
-       transform:translatez(0) !important;
-    -webkit-transform:translatez(0) !important;
-}
 
-.contact-quote{
+
+
+.social-media{
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 3rem;
 }
 
-
-.contact-quote h3{
-    font-size: 3rem;
+.fa-twitter{
+    color: #fff;
+    font-size: 1.5rem;
 }
 
-.contact-hr{
-    border-bottom: 5px solid rgb(250, 1, 1);
-    width: 10%;
-    margin-left: 11.5rem;
-}
-
-.contact-quote h6{
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-}
-
-.contact-quote p{
-    margin-bottom: 3rem;
+.fa-twitter:hover{
     color: #000;
-    font-size: 1.2rem;
+    transition: all 0.5s ease;
 }
 
-.fa-check-square {
-    color: rgb(221, 94, 94);
-    font-size: 2rem;
+
+.fa-facebook-f{
+    color: #fff;
+    font-size: 1.5rem;
 }
 
-form{
-    background-color: rgb(255, 255, 255, 0.5);
-    padding: 2rem 2rem;
-    margin-top: 10rem;
-}
-
-.btn-style{
-    padding: 1rem 15rem;
-    background-color: rgb(255, 49, 49);
-    text-align: center;
-}
-
-.btn-style:hover{
+.fa-facebook-f:hover{
     color: #000;
-    background-color: rgb(255, 49, 49);
+    transition: all 0.5s ease;
 }
 
+.fa-linkedin-in{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.fa-linkedin-in:hover{
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.fa-instagram{
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+.fa-instagram:hover{
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.fa-snapchat-ghost{
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+.fa-snapchat-ghost:hover{
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.fa-youtube{
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+.fa-youtube:hover{
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+
+
+/*Keyframe Animation*/
+
+@keyframes moveInLeft {
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+
+@keyframes moveInRight {
+	0%{
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	80% {
+		transform: translateX(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0%{
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
