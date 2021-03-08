@@ -1,9 +1,11 @@
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 html,body{
-    scroll-behavior: smooth;
+    font-family: 'Architects Daughter', cursive;
 }
 
 .navbar {
@@ -71,7 +73,7 @@ html,body{
 }
 
 .container-about{
-    height: 40rem;
+    height: 35rem;
     text-align: center;
 }
 
@@ -126,8 +128,8 @@ html,body{
     box-shadow: 0 1.5rem 4rem rgba(0,0,0);
     transition: transform 0.3s;
     margin-top: 5rem;
-    margin-left: 1.5rem;
-    width: 20rem;
+    margin-left: 0.25rem;
+    width: 17rem;
 }
 
 .fa-money-check-alt{
@@ -538,4 +540,102 @@ text-decoration: none;
 		opacity: 1;
 		transform: translate(0);
 	}
+}
+
+
+@media (max-width: 17.5em){
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    .jumbotron{
+        height: 39rem;
+    }
+
+    .display-4{
+        font-size: 3rem;
+    }
+
+    .lead{
+        font-size: 3rem;
+    }
+
+    .fa-arrow-down{
+        font-size: 4rem;
+    }
+
+    .text-owner{
+        transform: translateX(0%);
+    }
+
+    .container-about{
+        height: 60rem;
+    }
+
+    .container-skills{
+        height: 98rem;
+    }
+
+    .card-body p{
+        margin-left: 0rem;
+    }
+
+    .container-location{
+        height: 136rem;
+    }
+
+    .location-header h1{
+        font-size: 2rem;
+    }
+
+    .container-review{
+        height: 150rem;
+    }
+
+    .review-header h1{
+        font-size: 3rem;
+    }
+
+    .story-shape{
+        float: none;
+        margin-left: 3.2rem;
+    }
+
+    .card-review{
+        padding: 3rem;
+        transform: translateX(0%);
+    }
+
+    .story-text h4 {
+        transform: translate(-6%,23%);
+    }
+
+    .container-contact{
+        height: 120rem;
+    }
+
+    .contact-quote{
+        margin-top: 4rem;
+    }
+
+    form{
+        margin-top: 5rem;
+    }
+
+    .btn-style{
+        padding: 1rem 4rem;
+    }
+
+    .container-footer{
+        height: 65rem;
+    }
+
+    .footer-header{
+        margin-left: -2rem;
+    }
+
+    .footer-header p{
+        margin-left: 3rem;
+    }
 }
