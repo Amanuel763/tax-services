@@ -129,7 +129,7 @@ html,body{
     transition: transform 0.3s;
     margin-top: 5rem;
     margin-left: 0.25rem;
-    width: 17rem;
+    width: 23rem;
 }
 
 .fa-money-check-alt{
@@ -542,6 +542,201 @@ text-decoration: none;
 	}
 }
 
+@media (max-width: 64em){
+    body{
+        overflow-x: hidden;
+    }
+
+    .card{
+        width: 14rem;
+    }
+
+    .container-location{
+        height: 64rem;
+    }
+
+    .container-review{
+        height: 105rem;
+    }
+
+    .btn-style{
+        padding: 1rem 8rem;
+    }
+}
+
+@media (max-width: 48em){
+    body{
+        overflow-x: hidden;
+    }
+
+    .card{
+        width: 11rem;
+        margin-left: 0rem;
+    }
+
+    .container-review{
+        height: 139rem;
+    }
+
+    .story-shape{
+        float: none;
+        margin-left: 3.2rem;
+    }
+
+    .story-text h4 {
+        transform: translate(-6%,23%);
+    }
+
+    .btn-style{
+        padding: 1rem 4rem;
+    }
+
+    .contact-quote{
+        margin-top: 10rem;
+    }
+
+    form{
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 33.75em){
+    body{
+        overflow-x: hidden;
+    }
+
+    .jumbotron{
+        height: 44rem;
+    }
+
+    .display-4{
+        font-size: 5rem;
+    }
+
+    .lead{
+        font-size: 4rem;
+    }
+
+    .container-about{
+        height: 55rem;
+    }
+
+    .text-owner{
+        transform: translateX(0%);
+    }
+
+    .container-skills{
+        height: 87rem;
+    }
+
+    .card{
+        width: 27rem;
+        margin-left: 3rem;
+    }
+
+    .container-location {
+        height: 139rem;
+    }
+
+    .story-shape{
+        float: none;
+        margin-left: 3.2rem;
+    }
+
+    .card-review{
+        padding: 3rem;
+        transform: translateX(0%);
+    }
+
+    .story-text h4 {
+        transform: translate(-6%,23%);
+    }
+
+    .container-review{
+        height: 105rem;
+    }
+
+    .container-contact{
+        height: 107rem;
+    }
+
+    .container-footer{
+        height: 59rem;
+    }
+}
+
+@media (max-width: 25.875em){
+    .card{
+        margin-left: -1rem;
+    }
+
+    .container-location{
+        height: 145rem;
+    }
+
+    .container-review{
+        height: 120rem;
+    }
+}
+
+
+@media (max-width: 23.4375em){
+
+    .container-skills{
+        height: 91rem;
+    }
+
+    .card{
+        width: 24rem;
+        margin-left: 0rem;
+    }
+
+    .container-review{
+        height: 137rem;
+    }
+}
+
+@media (max-width: 22.5em){
+    .card-body{
+        margin-left: -2rem;
+    }
+}
+
+@media (max-width: 20em){
+
+    .display-4 {
+        font-size: 4rem;
+    }
+
+    .card {
+        width: 18rem;
+        margin-left: 1rem;
+    }
+
+    .card-body{
+        margin-left: 0rem;
+    }
+
+    .container-about {
+        height: 60rem;
+    }
+
+    .container-skills {
+        height: 100rem;
+    }
+
+    .container-location {
+        height: 151rem;
+    }
+
+    .review-header h1 {
+        font-size: 3rem;
+    }
+
+}
+
+
+
 
 @media (max-width: 17.5em){
     
@@ -577,6 +772,15 @@ text-decoration: none;
         height: 98rem;
     }
 
+    .card{
+        width: 16.5rem !important;
+        transform: translateX(-3%);
+    }
+
+    .card-body{
+        transform: translateX(-7px);
+    }
+
     .card-body p{
         margin-left: 0rem;
     }
@@ -590,7 +794,7 @@ text-decoration: none;
     }
 
     .container-review{
-        height: 150rem;
+        height: 150rem !important;
     }
 
     .review-header h1{
@@ -611,10 +815,9 @@ text-decoration: none;
         transform: translate(-6%,23%);
     }
 
-    .container-contact{
-        height: 120rem;
+    .container-contact {
+        height: 100rem;
     }
-
     .contact-quote{
         margin-top: 4rem;
     }
